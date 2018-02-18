@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="woordenapplicatie.gui.WoordenController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="20.0" layoutY="20.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="598.0">
+               <children>
+                  <Label text="Input" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <TextArea fx:id="taInput" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="30.0" />
+                  <VBox spacing="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Button fx:id="btAantal" mnemonicParsing="false" onAction="#aantalAction" prefHeight="26.0" prefWidth="103.0" text="Aantal" />
+                        <Button fx:id="btSorteer" mnemonicParsing="false" onAction="#sorteerAction" prefHeight="26.0" prefWidth="101.0" text="Sorteer" />
+                        <Button fx:id="btFrequentie" layoutX="204.0" mnemonicParsing="false" onAction="#frequentieAction" prefHeight="26.0" prefWidth="102.0" text="Frequentie" />
+                        <Button fx:id="btConcordantie" layoutX="306.0" mnemonicParsing="false" onAction="#concordatieAction" text="Concordantie" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="taOutput" editable="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+                  <Label text="Output" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
